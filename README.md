@@ -1,7 +1,7 @@
 # qmsspkg
 
 [![Build Status](https://github.com/tbrambor/qmssspkg/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/tbrambor/qmssspkg/actions/workflows/ci-cd.yml)
-[![codecov](https://codecov.io/gh/tbrambor/qmsspkg/branch/main/graph/badge.svg)](https://codecov.io/gh/tbrambor/qmsspkg)
+[![codecov](https://codecov.io/github/tbrambor/qmssspkg/graph/badge.svg?token=NOJHOY9D2X)](https://codecov.io/github/tbrambor/qmssspkg)
 [![TestPyPI version](https://img.shields.io/badge/dynamic/json?label=TestPyPI&query=info.version&url=https://test.pypi.org/pypi/qmsspkg/json)](https://test.pypi.org/project/qmsspkg/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Versions](https://img.shields.io/badge/dynamic/json?label=Python&query=info.requires_python&url=https://test.pypi.org/pypi/qmsspkg/json)](https://test.pypi.org/project/qmsspkg/)
