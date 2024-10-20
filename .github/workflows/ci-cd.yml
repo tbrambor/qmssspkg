@@ -10,12 +10,10 @@ jobs:
     # Define job steps
     steps:
     - name: Set up Python 3.12
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.12
+      uses: actions/setup-python@v4  
 
     - name: Check-out repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4  
 
     - name: Install poetry
       uses: snok/install-poetry@v1
@@ -30,7 +28,7 @@ jobs:
       run: poetry run pytest tests/ --cov=qmsspkg --cov-report=xml:coverage.xml
 
     - name: Use Codecov to track coverage
-      uses: codecov/codecov-action@v2
+      uses: codecov/codecov-action@v3  
       with:
         files: ./coverage.xml  # coverage report
 
