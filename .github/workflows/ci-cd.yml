@@ -1,0 +1,40 @@
+name: ci-cd
+
+on: [push, pull_request]
+
+jobs:
+  ci:
+    # Set up operating system
+    runs-on: ubuntu-latest
+
+    # Define job steps
+    steps:
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.12
+
+    - name: Check-out repository
+      uses: actions/checkout@v2
+
+    - name: Install poetry
+      uses: snok/install-poetry@v1
+
+    - name: Configure Poetry to create virtual environment in the project folder
+      run: poetry config virtualenvs.in-project true
+
+    - name: Install package
+      run: poetry install
+
+    - name: Test with pytest
+      run: poetry run pytest tests/ --cov=qmsspkg --cov-report=xml:coverage.xml
+
+    - name: Use Codecov to track coverage
+      uses: codecov/codecov-action@v2
+      with:
+        files: ./coverage.xml  # coverage report
+
+    - name: Build documentation
+      run: |
+        set -e  # Ensure the process exits on any errors
+        poetry run make html --directory=docs/

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "qmsspkg"
-version = "0.1.0"
+version = "1.0.1"
 description = "Python package that eases the pain of concatenating Pandas categoricals!"
 authors = ["Thomas Brambor"]
 license = "MIT"
@@ -16,6 +16,8 @@ pandas = "^2.2.3"
 myst-nb = "^1.1.2"
 sphinx-autoapi = "^3.3.2"
 sphinx-rtd-theme = "^3.0.1"
+pytest = "^8.3.3"
+pytest-cov = "^5.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
