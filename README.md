@@ -9,7 +9,7 @@
 
 Python package that eases the pain of concatenating Pandas categoricals!
 
-_Note:_ This is package created for teaching how to create Python Packages as part of Columbia's QMSS MA in Data Science program.
+_Note:_ This package was created for teaching how to create Python Packages as part of Columbia's QMSS MA in Data Science program.
 
 ## Installation
 
