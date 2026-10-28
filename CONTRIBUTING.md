@@ -43,10 +43,11 @@ If you are proposing a feature:
 Ready to contribute? Here's how to set up `qmsspkg` for local development.
 
 1. Download a copy of `qmsspkg` locally.
-2. Install `qmsspkg` using `poetry`:
+
+2. Install [`uv`](https://docs.astral.sh/uv/), then create the environment and install `qmsspkg` with its development dependencies:
 
     ```console
-    $ poetry install
+    $ uv sync
     ```
 
 3. Use `git` (or similar) to create a branch for local development and make your changes:
@@ -55,7 +56,7 @@ Ready to contribute? Here's how to set up `qmsspkg` for local development.
     $ git checkout -b name-of-your-bugfix-or-feature
     ```
 
-4. When you're done making changes, check that your changes conform to any code formatting requirements and pass any tests.
+4. When you're done making changes, check that your changes conform to any code formatting requirements and pass the tests (`uv run pytest`).
 
 5. Commit your changes and open a pull request.
 

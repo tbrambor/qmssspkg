@@ -1,7 +1,6 @@
 # qmsspkg
 
 [![Build Status](https://github.com/tbrambor/qmssspkg/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/tbrambor/qmssspkg/actions/workflows/ci-cd.yml)
-[![codecov](https://codecov.io/github/tbrambor/qmssspkg/graph/badge.svg?token=NOJHOY9D2X)](https://codecov.io/github/tbrambor/qmssspkg)
 [![TestPyPI version](https://img.shields.io/badge/dynamic/json?label=TestPyPI&query=info.version&url=https://test.pypi.org/pypi/qmsspkg/json)](https://test.pypi.org/project/qmsspkg/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Versions](https://img.shields.io/badge/dynamic/json?label=Python&query=info.requires_python&url=https://test.pypi.org/pypi/qmsspkg/json)](https://test.pypi.org/project/qmsspkg/)
@@ -14,7 +13,7 @@ _Note:_ This package was created for teaching how to create Python Packages as p
 ## Installation
 
 ```bash
-$ pip install --index-url https://test.pypi.org/simple/ qmsspkg
+$ pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ qmsspkg
 ```
 
 ## Usage
@@ -31,4 +30,4 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 
 ## Credits
 
-`qmsspkg` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+`qmsspkg` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the [`qmss-pkgs-cookiecutter`](https://github.com/QMSS-G5072-2026/qmss-pkgs-cookiecutter) template, a uv-based fork of [`py-pkgs-cookiecutter`](https://github.com/py-pkgs/py-pkgs-cookiecutter).
